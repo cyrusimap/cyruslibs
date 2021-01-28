@@ -2,10 +2,21 @@
 
 A wrapper script to pull in the library files required for cyrus-imapd and build them
 
+## Fetching dependencies
+
+### Debian
 Dependency installation script for Debian clean installation. Tested on Debian Stretch lxc image.
 ```
-./install-dependencies.sh
+./install-dependencies-debian.sh
 ```
+
+### Ubuntu
+Dependency installation script for Ubuntu installation (Should work on 20.10 groovy).
+```
+./install-dependencies-ubuntu.sh
+```
+
+## Building libraries
 
 To build all libraries run:
 ```
