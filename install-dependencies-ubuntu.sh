@@ -15,6 +15,6 @@ JANSSON_DEPS="zlib1g zlib1g-dev libglib2.0-dev"
 XAPIAN_DEPS="graphviz doxygen python3-docutils help2man libmagic-dev"
 
 # Libwslay dependencies
-LIBWSLAY_DEPS="sphinx-doc"
+LIBWSLAY_DEPS="sphinx-common"
 
 apt-get install -y ${BUILD_ENV_DEPS} ${JANSSON_DEPS} ${XAPIAN_DEPS} ${LIBWSLAY_DEPS}
