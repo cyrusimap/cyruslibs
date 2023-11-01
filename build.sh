@@ -84,7 +84,7 @@ if [ ! $ITEM ] || [ $ITEM == libical ] ; then
   cd build
   cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DICU_ROOT=$PREFIX -DENABLE_GTK_DOC=OFF \
         -DUSE_BUILTIN_TZDATA=true \
-        -DCMAKE_SKIP_RPATH=ON -DICAL_ALLOW_EMPTY_PROPERTIES=true ..
+        -DICAL_ALLOW_EMPTY_PROPERTIES=true ..
   make $MAKEOPTS
   sudo make install
 )
