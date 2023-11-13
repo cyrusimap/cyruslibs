@@ -3,6 +3,7 @@
 my $tag = shift;
 
 # make sure we're up to date
+system('git', 'fetch', '--tags');
 system('git', 'submodule', 'init');
 system('git', 'submodule', 'update');
 
