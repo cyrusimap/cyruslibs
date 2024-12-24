@@ -1,7 +1,3 @@
-[submodule "jansson"]
-	path = jansson
-	url = https://github.com/cyrusimap/jansson.git
-	branch = cyrus
 [submodule "xapian"]
 	path = xapian
 	url = https://github.com/cyrusimap/xapian.git

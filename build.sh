@@ -26,17 +26,6 @@ if [ ! $ITEM ] || [ $ITEM == icu ] ; then
 )
 fi
 
-if [ ! $ITEM ] || [ $ITEM == jansson ] ; then
-(
-  cd jansson
-  git clean -f -x -d
-  autoreconf -v -i
-  ./configure --enable-silent-rules --prefix=$PREFIX
-  make $MAKEOPTS
-  sudo make install
-)
-fi
-
 # XXX - can we find the platform?
 if [ ! $ITEM ] || [ $ITEM == libical ] ; then
 (
