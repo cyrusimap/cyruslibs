@@ -17,12 +17,6 @@
 [submodule "cyrus-timezones"]
 	path = cyrus-timezones
 	url = https://github.com/cyrusimap/cyrus-timezones.git
-[submodule "re2"]
-	path = re2
-	url = https://github.com/google/re2.git
-[submodule "cre2"]
-	path = cre2
-	url = https://github.com/marcomaggi/cre2
 [submodule "wslay"]
 	path = wslay
 	url = https://github.com/cyrusimap/wslay
