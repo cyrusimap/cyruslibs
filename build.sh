@@ -14,6 +14,7 @@ export PATH=$PREFIX/bin:$PATH
 git submodule init
 git submodule update
 
+# Note: Debian bookworm uses 72.1-3 but we want to stay current for Unicode
 if [ ! $ITEM ] || [ $ITEM == icu ] ; then
 (
   cd icu
@@ -27,6 +28,7 @@ if [ ! $ITEM ] || [ $ITEM == icu ] ; then
 fi
 
 # XXX - can we find the platform?
+# Note: Debian bookworm uses 3.0.16 but we regularly push changes upstream
 if [ ! $ITEM ] || [ $ITEM == libical ] ; then
 (
   cd libical
@@ -41,6 +43,7 @@ if [ ! $ITEM ] || [ $ITEM == libical ] ; then
 )
 fi
 
+# Note: we did a couple of customizations, can we merge them upstream?
 if [ ! $ITEM ] || [ $ITEM == vzic ] ; then
 (
   cd vzic
@@ -50,6 +53,7 @@ if [ ! $ITEM ] || [ $ITEM == vzic ] ; then
 )
 fi
 
+# Note: this is the main repository, there is no upstream package
 if [ ! $ITEM ] || [ $ITEM == timezones ] ; then
 (
   cd cyrus-timezones
@@ -62,6 +66,7 @@ if [ ! $ITEM ] || [ $ITEM == timezones ] ; then
 )
 fi
 
+# Note: this is a snapshot of 1.5 so we can make use of CJK word segmentation
 if [ ! $ITEM ] || [ $ITEM == xapian ] ; then
 (
   cd xapian
@@ -75,6 +80,7 @@ if [ ! $ITEM ] || [ $ITEM == xapian ] ; then
 )
 fi
 
+# Note: the Debian package is version 1.0.4, we want 1.0.6
 if [ ! $ITEM ] || [ $ITEM == libchardet ] ; then
 (
   cd libchardet
