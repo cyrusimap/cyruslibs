@@ -13,9 +13,6 @@
 [submodule "cyrus-timezones"]
 	path = cyrus-timezones
 	url = https://github.com/cyrusimap/cyrus-timezones.git
-[submodule "wslay"]
-	path = wslay
-	url = https://github.com/cyrusimap/wslay
 [submodule "libchardet"]
 	path = libchardet
 	url = https://github.com/cyrusimap/libchardet

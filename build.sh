@@ -75,19 +75,6 @@ if [ ! $ITEM ] || [ $ITEM == xapian ] ; then
 )
 fi
 
-if [ ! $ITEM ] || [ $ITEM == wslay ] ; then
-(
-  cd wslay
-  git clean -f -x -d
-  autoreconf -i
-  automake
-  autoconf
-  ./configure --enable-silent-rules --prefix=$PREFIX
-  make
-  sudo make install
-)
-fi
-
 if [ ! $ITEM ] || [ $ITEM == libchardet ] ; then
 (
   cd libchardet
