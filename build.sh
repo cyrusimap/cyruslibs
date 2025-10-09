@@ -37,12 +37,12 @@ if [ ! $ITEM ] || [ $ITEM == libical ] ; then
   cd build
   cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
         -DICU_ROOT=$PREFIX \
-        -DENABLE_GTK_DOC=OFF \
         -DUSE_BUILTIN_TZDATA=true \
         -DICAL_ALLOW_EMPTY_PROPERTIES=true \
         -DLIBICAL_BUILD_TESTING=true \
         -DGOBJECT_INTROSPECTION=False \
         -DICAL_GLIB_BUILD_DOCS=False \
+        -DLIBICAL_JAVA_BINDINGS=False \
         ..
   make $MAKEOPTS
   sudo make install
