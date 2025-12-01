@@ -45,8 +45,8 @@ if [ ! $ITEM ] || [ $ITEM == libical ] ; then
         -DLIBICAL_JAVA_BINDINGS=False \
         ..
   make $MAKEOPTS
-  make test
   sudo make install
+  make test # libical test requires libical to be installed
 )
 fi
 
