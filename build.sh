@@ -46,6 +46,7 @@ if [ ! $ITEM ] || [ $ITEM == libical ] ; then
         ..
   make $MAKEOPTS
   sudo make install
+  make test # libical test requires libical to be installed
 )
 fi
 
