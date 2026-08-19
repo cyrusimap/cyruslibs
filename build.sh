@@ -60,19 +60,6 @@ if [ ! $ITEM ] || [ $ITEM == vzic ] ; then
 )
 fi
 
-# Note: this is the main repository, there is no upstream package
-if [ ! $ITEM ] || [ $ITEM == timezones ] ; then
-(
-  cd cyrus-timezones
-  git clean -f -x -d
-  autoreconf -i
-  PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$PREFIX/lib/pkgconfig ./configure --prefix=$PREFIX
-  make $MAKEOPTS
-  make check
-  sudo make install
-)
-fi
-
 # Note: this is a snapshot of 1.5 so we can make use of CJK word segmentation
 if [ ! $ITEM ] || [ $ITEM == xapian ] ; then
 (

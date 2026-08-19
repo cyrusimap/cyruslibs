@@ -10,9 +10,6 @@
 	path = icu
 	url = https://github.com/cyrusimap/icu4c.git
 	branch = cyrus
-[submodule "cyrus-timezones"]
-	path = cyrus-timezones
-	url = https://github.com/cyrusimap/cyrus-timezones.git
 [submodule "libchardet"]
 	path = libchardet
 	url = https://github.com/cyrusimap/libchardet
